@@ -1,0 +1,142 @@
+.sidebar {
+    width: 280px;
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    margin: 16px 0 4px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #e6edf3;
+}
+
+.username {
+    margin: 0 0 12px;
+    color: #7d8590;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bio {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #e6edf3;
+}
+
+.edit-btn {
+    width: 100%;
+    padding: 6px;
+    background: transparent;
+    border: 1px solid #373e47;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    color: #e6edf3;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: #21262d;
+}
+
+.follow-info {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #7d8590;
+    align-items: center;
+}
+
+.follow-info svg {
+    flex-shrink: 0;
+}
+
+.follow-info strong {
+    color: #e6edf3;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #373e47;
+    margin: 16px 0;
+}
+
+.achievements-section {
+    margin-bottom: 16px;
+}
+
+.achievements-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e6edf3;
+    margin: 0 0 12px 0;
+}
+
+.achievement-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.achievement-badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    overflow: hidden;
+    /*border: 1px solid #373e47;*/
+    transition: border-color 0.2s;
+}
+
+.achievement-badge:hover {
+    border-color: #8b949e;
+}
+
+.badge-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e6edf3;
+}
+
+.detail-item .icon {
+    font-size: 16px;
+}
+
+.detail-item a {
+    color: #539bf5;
+    text-decoration: none;
+}
+
+.detail-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .avatar {
+        width: 150px;
+    }
+}

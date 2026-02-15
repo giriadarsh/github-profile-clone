@@ -1,0 +1,234 @@
+.contributions-section {
+    margin-bottom: 24px;
+}
+
+.contributions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.contributions-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #e6edf3;
+}
+
+.contribution-settings {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.settings-link {
+    font-size: 12px;
+    color: #7d8590;
+    cursor: pointer;
+}
+
+.settings-link:hover {
+    color: #539bf5;
+}
+
+.contributions-content {
+    display: flex;
+    gap: 16px;
+}
+
+.contributions-wrapper {
+    flex: 1;
+    border: 1px solid #373e47;
+    border-radius: 6px;
+    padding: 16px;
+    background-color: #0d1117;
+}
+
+.contributions-graph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+}
+
+.month-labels {
+    position: relative;
+    height: 12px;
+    margin-bottom: 2px;
+}
+
+.month-label {
+    position: absolute;
+    font-size: 9px;
+    color: #7d8590;
+}
+
+.graph-with-labels {
+    display: flex;
+    gap: 6px;
+}
+
+.day-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 0;
+}
+
+.day-label {
+    height: 8px;
+    font-size: 8px;
+    color: #7d8590;
+    line-height: 8px;
+    text-align: right;
+    padding-right: 3px;
+    width: 20px;
+}
+
+.contributions-grid {
+    display: flex;
+    gap: 3px;
+    flex-wrap: nowrap;
+}
+
+.week-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+.contribution-cell {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 0.5px solid rgba(27, 31, 36, 0.06);
+    shape-rendering: geometricPrecision;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+}
+
+.contribution-cell:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    outline-offset: -1px;
+}
+
+.learn-link-container {
+    margin-top: 6px;
+    text-align: left;
+    padding-left: 26px;
+}
+
+.learn-link {
+    font-size: 11px;
+    color: #7d8590;
+    text-decoration: none;
+}
+
+.learn-link:hover {
+    color: #539bf5;
+    text-decoration: underline;
+}
+
+.contributions-footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #373e47;
+}
+
+.contributions-legend {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 10px;
+    color: #7d8590;
+    justify-content: flex-end;
+}
+
+.legend-cell {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    border: 0.5px solid rgba(27, 31, 36, 0.06);
+}
+
+/* Year selector sidebar */
+.year-selector-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 28px;
+}
+
+.year-link {
+    font-size: 12px;
+    color: #7d8590;
+    cursor: pointer;
+    text-align: right;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: color 0.2s;
+}
+
+.year-link:hover {
+    color: #539bf5;
+}
+
+.year-link.active {
+    color: #e6edf3;
+    font-weight: 600;
+}
+
+.contributions-section {
+    display: flex;
+    gap: 32px;
+
+}
+
+@media (max-width: 768px) {
+    .contributions-content {
+        flex-direction: column;
+    }
+
+    .contributions-wrapper {
+        padding: 12px;
+    }
+
+    .contributions-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .month-labels {
+        display: none;
+    }
+
+    .day-labels {
+        display: none;
+    }
+
+    .graph-with-labels {
+        gap: 0;
+    }
+
+    .contributions-grid {
+        overflow-x: auto;
+    }
+
+    .learn-link-container {
+        padding-left: 0;
+    }
+
+    .year-selector-sidebar {
+        flex-direction: row;
+        padding-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .year-link {
+        text-align: center;
+    }
+}
